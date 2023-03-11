@@ -3,8 +3,8 @@ html {
     justify-content: center;
     padding-left: 10%;
     padding-right: 10%;
+    background: linear-gradient(328deg, rgba(96,86,255,0.5) 0%, rgba(160,160,240,0.5) 55%, rgba(0,212,255,0.3) 100%); ;
 }
-
 
 .bayan .item {
     display: flex;
@@ -29,15 +29,15 @@ img {
 
 .line {
     display: block;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(162, 133, 228);
     width: 30em;
     height: 0.1em;
     margin-bottom: 2em;
 }
 
-/* .item input {
+.item input {
 	display: none;
-} */
+}
 
 .icon {
     background-image: url(src/img/Plus20.png);
@@ -51,12 +51,21 @@ input:checked ~ div .icon {
     background-image: url(src/img/Minus20.png);
 }
 
-/* input:active {
-    background-color: aqua;
-} */
+input:checked ~ img {
+    display: block;
+}
+
+label img {
+    display: none;
+}
 
 .item div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 400;
 }
