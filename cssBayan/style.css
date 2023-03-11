@@ -42,11 +42,18 @@ img {
 .icon {
     background-image: url(src/img/Plus20.png);
     display: inline-block;
-    width: 1.3em;
-    height: 1.3em; 
-    background-repeat: no-repeat;
-    
+    width: 1.2em;
+    height: 1.2em; 
+    background-repeat: no-repeat;    
 }
+
+input:checked ~ div .icon {
+    background-image: url(src/img/Minus20.png);
+}
+
+/* input:active {
+    background-color: aqua;
+} */
 
 .item div {
     display: flex;
