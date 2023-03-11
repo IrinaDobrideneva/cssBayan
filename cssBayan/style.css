@@ -34,3 +34,22 @@ img {
     height: 0.1em;
     margin-bottom: 2em;
 }
+
+/* .item input {
+	display: none;
+} */
+
+.icon {
+    background-image: url(src/img/Plus20.png);
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em; 
+    background-repeat: no-repeat;
+    
+}
+
+.item div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
