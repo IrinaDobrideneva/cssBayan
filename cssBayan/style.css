@@ -1,9 +1,13 @@
+*:hover {
+    transition: 0.5s;
+}
+
 html {
     display: flex;
     justify-content: center;
     padding-left: 10%;
     padding-right: 10%;
-    background: linear-gradient(328deg, rgba(96,86,255,0.5) 0%, rgba(160,160,240,0.5) 55%, rgba(0,212,255,0.3) 100%); ;
+    background-color: #e4dfec;
 }
 
 .bayan .item {
@@ -22,17 +26,18 @@ html {
 img {
     display: block;
     margin: 0 auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0.5em 0.5em 0.8em rgba(0, 0, 0, 0.25);
     margin-bottom: 2em;
     margin-top: 1em;
+    border-radius: 0.3em;
 }
 
 .line {
     display: block;
     background-color: rgb(162, 133, 228);
     width: 30em;
-    height: 0.1em;
-    margin-bottom: 2em;
+    height: 0.05em;
+    margin-bottom: 0.3em;
 }
 
 .item input {
@@ -41,11 +46,13 @@ img {
 
 .icon {
     background-image: url(src/img/Plus20.png);
-    display: inline-block;
+    display: none;
     width: 1.2em;
     height: 1.2em; 
     background-repeat: no-repeat;    
 }
+
+
 
 input:checked ~ div .icon {
     background-image: url(src/img/Minus20.png);
@@ -55,8 +62,14 @@ input:checked ~ img {
     display: block;
 }
 
+input:hover ~ img {
+    display: block;
+}
+
+
 label img {
     display: none;
+    width: 60%;
 }
 
 .item div {
@@ -68,4 +81,19 @@ label img {
 h2 {
     font-size: 1.5em;
     font-weight: 400;
+    color: rgb(71, 1, 152);
 }
+
+h1 {
+    color: rgb(69, 69, 84);
+}
+
+.wrap:hover .icon {
+    display: inline-block;
+}
+
+.wrap:hover h2 {
+    color: rgb(69, 69, 84);
+    font-weight: 500;
+}
+
